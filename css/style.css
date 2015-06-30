@@ -188,7 +188,6 @@ textarea {
    ========================================================================== */
 /* Font and Baseline Grid*/
 html {
-  background-image: url(http://basehold.it/i/22);
   color: #333; }
 
 body {
@@ -267,7 +266,7 @@ img {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  padding: 8px 20px;
+  padding: 0px 20px;
   margin-top: 11px;
   margin-bottom: 0px;
   display: inline-block;
@@ -288,7 +287,8 @@ img {
 
 .CTA p {
   font-family: "Josefin Slab", serif;
-  font-size: 24px; }
+  font-size: 24px;
+  line-height: 33px; }
 
 /* ==========================================================================
    Helper classes
@@ -447,8 +447,36 @@ header {
   .offices div.leaseIncludes {
     background-image: url("../img/leaseIncludes.jpg");
     background-size: cover; }
+    .offices div.leaseIncludes ul {
+      margin-top: 0;
+      margin-bottom: 0; }
+    .offices div.leaseIncludes p {
+      margin-bottom: 0; }
   .offices div.overImageLeft {
     padding-top: 11px;
-    padding-bottom: 11px; }
+    padding-bottom: 33px; }
   .offices .testimonial img {
     padding: 33px 15px 0 15px; }
+
+.training {
+  position: relative; }
+  .training h2 {
+    padding-left: 15px; }
+  .training img {
+    margin-top: -70px;
+    position: relative;
+    z-index: -5; }
+  .training p {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .training .subtitle {
+    font-family: "Josefin Slab", serif;
+    font-size: 24px;
+    line-height: 33px; }
+
+.conference {
+  padding: 0 15px; }
+  .conference .subtitle {
+    font-family: "Josefin Slab", serif;
+    font-size: 24px;
+    line-height: 33px; }

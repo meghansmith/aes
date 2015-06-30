@@ -19,10 +19,18 @@
 	div.leaseIncludes{
 		background-image: url("../img/leaseIncludes.jpg");
 		background-size: cover;
+
+		ul{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		p{
+			margin-bottom: 0;
+		}
 	}
 	div.overImageLeft{
 		padding-top: 11px;
-		padding-bottom: 11px;
+		padding-bottom: 33px;
 	}
 	
 	.testimonial img{
