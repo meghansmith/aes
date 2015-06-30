@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:600,600italic|Open+Sans:400,700);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:600,600italic|Open+Sans:300,400,700);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -187,6 +187,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* Font and Baseline Grid*/
+html {
+  background-image: url(http://basehold.it/i/22);
+  color: #333; }
+
 body {
   font-size: 16px;
   line-height: 22px;
@@ -196,10 +200,7 @@ h1, h2, h3, h4 {
   font-family: "Josefin Slab", serif; }
 
 h1 {
-  font-size: 54px;
-  line-height: 66px;
-  margin-top: 44px;
-  margin-bottom: 22px; }
+  font-size: 54px; }
 
 h2 {
   font-size: 36px;
@@ -244,8 +245,47 @@ sup, sub {
 sub {
   top: 0.4em; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.logoReplace a {
+  display: inline-block;
+  max-width: 150px;
+  height: 75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/logo.png");
+  text-indent: -9999px;
+  margin: 0 auto; }
+  .logoReplace a:after {
+    display: none; }
+
 img {
   max-width: 100%; }
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 20px;
+  margin-top: 11px;
+  margin-bottom: 0px;
+  display: inline-block;
+  width: 48%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #cf1f26; }
+
+div.overImageLeft {
+  background-color: rgba(255, 255, 255, 0.65); }
+
+.slanted {
+  font-style: italic; }
+
+.CTA p {
+  font-family: "Josefin Slab", serif;
+  font-size: 24px; }
 
 /* ==========================================================================
    Helper classes
@@ -254,7 +294,7 @@ img {
   display: none !important;
   visibility: hidden; }
 
-.visuallyhidden {
+.visuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -264,8 +304,8 @@ img {
   position: absolute;
   width: 1px; }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyHidden.focusable:active,
+.visuallyHidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -337,3 +377,54 @@ img {
   h2,
   h3 {
     page-break-after: avoid; } }
+header {
+  position: relative; }
+  header h1 {
+    display: inline-block;
+    margin: 0;
+    line-height: 0;
+    padding-left: 10px; }
+  header div.topBar {
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 60px; }
+  header .menuButton {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 12px; }
+  header nav a {
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #000;
+    font-family: "Josefin Slab", serif;
+    font-size: 18px; }
+  header ul {
+    display: none;
+    list-style: none;
+    padding: 0; }
+  header li {
+    display: inline-block; }
+  header p {
+    padding: 0 15px;
+    margin-top: 0;
+    margin-bottom: 0; }
+    header p a {
+      color: #333; }
+  header .headline {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom: 11px; }
+  header .tagline {
+    margin-bottom: 22px; }
+  header div.overImageLeft {
+    position: absolute;
+    bottom: -1px;
+    background-color: rgba(255, 255, 255, 0.65); }
+
+.intro {
+  padding: 0 15px; }
+  .intro h2 {
+    font-size: 24px;
+    line-height: 36px; }

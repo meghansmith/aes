@@ -49,8 +49,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* Font and Baseline Grid*/
+
+ html { 
+    background-image: url(http://basehold.it/i/22);
+    color: #333;
+}
 body {
-  font-size: 16px;
+  font-size: 16px;  //pixels divided into ems
   line-height: 22px;
   margin: 0 auto;
 }
@@ -59,9 +64,6 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: 54px;
-  line-height: 66px;
-  margin-top: 44px;
-  margin-bottom: 22px;
 }
 h2 {
   font-size: 36px;
@@ -110,15 +112,55 @@ sub {
 
 
 
-
-
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+.logoReplace a {
+    display: inline-block;
+    max-width: 150px;
+    height: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/logo.png");
+    text-indent: -9999px;
+    margin: 0 auto;
+    &:after{
+      display: none;
+    }
+}
 img {
     max-width: 100%;
 }
 
+.button {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 20px;
+  margin-top: 11px;
+  margin-bottom: 0px;
+  display: inline-block;
+  width: 48%;
+  font-family: $fontB;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: $red;
+}
 
+div.overImageLeft{
+    background-color: rgba(255,255,255,.65);
+}
 
+.slanted {
+    font-style: italic;
+}
 
+.CTA {
+    p{
+        font-family: $fontH;
+        font-size: 24px;
+    }
+}
 
 
 
@@ -137,7 +179,7 @@ img {
     visibility: hidden;
 }
 
-.visuallyhidden {
+.visuallyHidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -148,8 +190,8 @@ img {
     width: 1px;
 }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyHidden.focusable:active,
+.visuallyHidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
