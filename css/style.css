@@ -480,3 +480,9 @@ header {
     font-family: "Josefin Slab", serif;
     font-size: 24px;
     line-height: 33px; }
+
+footer {
+  background-image: url("../img/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -350px; }
