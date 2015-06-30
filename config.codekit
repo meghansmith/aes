@@ -20,24 +20,90 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/introImage.jpg": {
+	"\/img\/bravoLogo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 76813,
-		"inputAbbreviatedPath": "\/img\/introImage.jpg",
-		"outputAbbreviatedPath": "\/img\/introImage.jpg",
+		"initialSize": 13147,
+		"inputAbbreviatedPath": "\/img\/bravoLogo.jpg",
+		"outputAbbreviatedPath": "\/img\/bravoLogo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/sampleEntryway.jpg": {
+	"\/img\/conf.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 157709,
+		"inputAbbreviatedPath": "\/img\/conf.jpg",
+		"outputAbbreviatedPath": "\/img\/conf.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/IntroImage.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 76813,
+		"inputAbbreviatedPath": "\/img\/IntroImage.jpg",
+		"outputAbbreviatedPath": "\/img\/IntroImage.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 184556,
+		"inputAbbreviatedPath": "\/img\/map.png",
+		"outputAbbreviatedPath": "\/img\/map.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/offices.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.9323e+06,
+		"inputAbbreviatedPath": "\/img\/offices.jpg",
+		"outputAbbreviatedPath": "\/img\/offices.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/SampleEntryway.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 212275,
-		"inputAbbreviatedPath": "\/img\/sampleEntryway.jpg",
-		"outputAbbreviatedPath": "\/img\/sampleEntryway.jpg",
+		"inputAbbreviatedPath": "\/img\/SampleEntryway.jpg",
+		"outputAbbreviatedPath": "\/img\/SampleEntryway.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/testimonial.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 81632,
+		"inputAbbreviatedPath": "\/img\/testimonial.jpg",
+		"outputAbbreviatedPath": "\/img\/testimonial.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/training.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 252270,
+		"inputAbbreviatedPath": "\/img\/training.jpg",
+		"outputAbbreviatedPath": "\/img\/training.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
