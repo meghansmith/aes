@@ -277,11 +277,14 @@ img {
   font-size: 16px;
   background-color: #cf1f26; }
 
-div.overImageLeft {
+.overImageLeft {
   background-color: rgba(255, 255, 255, 0.65); }
 
 .slanted {
   font-style: italic; }
+
+.stronger {
+  font-weight: 700; }
 
 .CTA p {
   font-family: "Josefin Slab", serif;
@@ -420,11 +423,32 @@ header {
     margin-bottom: 22px; }
   header div.overImageLeft {
     position: absolute;
-    bottom: -1px;
-    background-color: rgba(255, 255, 255, 0.65); }
+    bottom: -1px; }
 
 .intro {
   padding: 0 15px; }
   .intro h2 {
     font-size: 24px;
     line-height: 36px; }
+
+.offices {
+  position: relative; }
+  .offices h2 {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .offices img.officeImage {
+    margin-top: -70px;
+    position: relative;
+    z-index: -5; }
+  .offices p {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .offices div.leaseIncludes {
+    background-image: url("../img/leaseIncludes.jpg");
+    background-size: cover; }
+  .offices div.overImageLeft {
+    padding-top: 11px;
+    padding-bottom: 11px; }
+  .offices .testimonial img {
+    padding: 33px 15px 0 15px; }
