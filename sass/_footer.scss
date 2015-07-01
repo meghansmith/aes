@@ -3,4 +3,38 @@ footer{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: -350px;
+
+	h1{
+		margin: 0;
+		a{
+			height:30px;
+		}
+	}
+	.location {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 44px;
+		p{
+			margin: 0;
+		}
+		a{
+			color: #000;
+		}
+	}
+
+	div.propertyManager{
+		margin-top: 66px;
+		padding-left: 15px;
+		padding-right: 15px;
+		p{
+			margin-top: 11px;
+			margin-bottom: 11px;
+		}
+	}
+	.copyright {
+		font-size: 10px;
+		margin-bottom: 3px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
