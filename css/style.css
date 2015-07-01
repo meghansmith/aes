@@ -342,7 +342,7 @@ img {
    Helper classes
    ========================================================================== */
 .hidden {
-  display: none !important;
+  display: none;
   visibility: hidden; }
 
 .visuallyHidden {
@@ -450,11 +450,20 @@ header {
     font-family: "Josefin Slab", serif;
     font-size: 18px; }
   header ul {
+    display: block;
     display: none;
+    position: absolute;
+    right: 0;
+    z-index: 10;
     list-style: none;
-    padding: 0; }
+    padding: 0;
+    margin: 0;
+    background-color: #fff; }
   header li {
-    display: inline-block; }
+    display: block; }
+    header li a {
+      display: inline-block;
+      font-size: 16px; }
   header p {
     padding: 0 15px;
     margin-top: 0;
