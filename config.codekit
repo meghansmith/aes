@@ -42,13 +42,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/IntroImage.jpg": {
+	"\/img\/introImage.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 76813,
-		"inputAbbreviatedPath": "\/img\/IntroImage.jpg",
-		"outputAbbreviatedPath": "\/img\/IntroImage.jpg",
+		"inputAbbreviatedPath": "\/img\/introImage.jpg",
+		"outputAbbreviatedPath": "\/img\/introImage.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -97,13 +97,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/SampleEntryway.jpg": {
+	"\/img\/sampleEntryway.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 212275,
-		"inputAbbreviatedPath": "\/img\/SampleEntryway.jpg",
-		"outputAbbreviatedPath": "\/img\/SampleEntryway.jpg",
+		"inputAbbreviatedPath": "\/img\/sampleEntryway.jpg",
+		"outputAbbreviatedPath": "\/img\/sampleEntryway.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

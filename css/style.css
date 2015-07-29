@@ -267,14 +267,16 @@ img {
   text-decoration: none;
   color: #fff;
   padding: 0px 20px;
-  margin-top: 11px;
-  margin-bottom: 0px;
+  margin: 11px .5% 0 .5%;
   display: inline-block;
-  width: 48%;
+  width: 46%;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
   background-color: #cf1f26; }
+  @media (min-width: 600px) {
+    .button {
+      max-width: 150px; } }
 
 .overImageLeft {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+51,ffffff+100&0.65+0,0.65+92,0+100 */
@@ -441,6 +443,7 @@ header {
   header .menuButton {
     position: absolute;
     display: inline-block;
+    display: none;
     right: 10px;
     top: 12px; }
   header nav a {
@@ -449,9 +452,10 @@ header {
     color: #000;
     font-family: "Josefin Slab", serif;
     font-size: 18px; }
+    @media (min-width: 600px) {
+      header nav a {
+        padding: 0; } }
   header ul {
-    display: block;
-    display: none;
     position: absolute;
     right: 0;
     z-index: 10;
@@ -459,11 +463,43 @@ header {
     padding: 0;
     margin: 0;
     background-color: #fff; }
+    @media (min-width: 600px) {
+      header ul {
+        display: block !important;
+        width: 72%;
+        top: 17px; } }
+    @media (min-width: 800px) {
+      header ul {
+        width: 78%; } }
   header li {
     display: block; }
     header li a {
       display: inline-block;
       font-size: 16px; }
+    @media (min-width: 600px) {
+      header li {
+        float: left;
+        width: 20%;
+        margin-right: 20px; } }
+  @media (min-width: 600px) {
+    header li:first-child {
+      width: 11%; }
+    header li:nth-child(2) {
+      width: 29%; }
+    header li:nth-child(3) {
+      width: 27%; }
+    header li:nth-child(4) {
+      width: 17%;
+      margin-right: 0; } }
+  @media (min-width: 600px) and (min-width: 700px) {
+    header li:nth-child(4) {
+      float: right; } }
+
+  @media (min-width: 700px) {
+    header li {
+      max-width: 130px; } }
+  header .contactLink {
+    color: #cf1f26; }
   header p {
     padding: 0 15px;
     margin-top: 0;

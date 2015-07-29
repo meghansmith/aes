@@ -13,6 +13,7 @@ header{
 	.menuButton  {
 		position: absolute;
 		display: inline-block;
+		display: none;
 		right: 10px;
 		top: 12px;
 
@@ -24,11 +25,13 @@ header{
 			color: #000;
 			font-family: $fontH;
 			font-size: 18px;
+
+			@include bp($menuBreak){
+				padding: 0;
+			}
 		}
 	}
 	ul{
-		display: block;
-		display: none;
 		position: absolute;
 		right: 0;
 		z-index: 10;
@@ -36,6 +39,15 @@ header{
 		padding: 0;
 		margin: 0;
 		background-color: #fff;
+
+		@include bp($menuBreak){
+			display: block !important;
+			width: 72%;
+			top: 17px;
+		}
+		@include bp(800px){
+			width: 78%;
+		}
 	}
 	li{
 		display: block;
@@ -44,7 +56,39 @@ header{
 			font-size: 16px;
 		}
 
+		@include bp($menuBreak){
+			float: left;
+			width: 20%;
+			margin-right: 20px;
+		}
+
 	} 
+	@include bp($menuBreak){
+			li:first-child{
+				width: 11%;
+			}	
+			li:nth-child(2){
+				width: 29%;
+			}
+			li:nth-child(3){
+				width: 27%;
+			}
+			li:nth-child(4){
+				width: 17%;
+				margin-right: 0;
+				@include bp(700px){
+					float: right;
+				}
+			}
+		}
+	@include bp(700px){
+		li{
+			max-width: 130px;
+		}
+	}
+	.contactLink{
+		color: $red;
+	}
 	p {
 		padding: 0 15px;
 		margin-top: 0;
