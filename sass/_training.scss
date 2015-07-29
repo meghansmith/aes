@@ -1,7 +1,11 @@
 .training {
 	position: relative;
 	h2{
-		padding-left: 15px;
+		padding: $padSmall;
+
+		@include bp($med){
+			padding: $padMed;
+		}
 	}
 	img{
 		margin-top: -70px;
@@ -9,8 +13,11 @@
 		z-index: -5;
 	}
 	p{
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: $padSmall;
+
+		@include bp($med){
+			padding: $padMed;
+		}
 	}
 	ul{
 		padding-right: 15px;

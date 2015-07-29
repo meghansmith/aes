@@ -3,3 +3,16 @@
 		@content; //this takes all the content and dumps it
 	}
 }
+@mixin imgLeft{
+	@include bp($med){
+			width: 60%;
+			margin-right: 44px;
+			margin-bottom: 22px;
+			float: left;
+		}
+
+		@include bp($large){
+			margin-right: 55px;
+			margin-bottom: 44px;
+		}
+}

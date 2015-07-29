@@ -1,40 +1,143 @@
 .offices{
 	position: relative;
+	@include bp($med){
+		//vertical-align: top;
+	}
+
+
 	h2{
 		display: inline-block;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: $padSmall;
+
+
+		@include bp($med){
+			padding: $padMed;
+			padding-top: 22px;
+			padding-bottom: 22px;
+			padding-right: 100px;
+		}
 	}
 	img.officeImage{
 		margin-top: -70px;
 		position: relative;
 		z-index: -5;
+
+		@include bp($menuBreak){
+			margin-bottom: 44px;
+		}
+
+		@include bp($med){
+			margin-top: -134px;
+		}
+	}
+	@include bp($menuBreak){
+		p.floatUp{
+			margin-top: -197px;
+			max-width: 700px;
+			position: absolute;
+			right: 0;
+			padding-left: 150px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
 	}
 
+	@include bp(650px){  //when goes to fewer lines
+		p.floatUp{
+			padding-top: 22px;
+			padding-bottom: 22px;
+		}
+	}
+
+	@include bp(650px){
+		p.floatUp{
+			margin-top: -219px;
+			padding-top: 33px;
+			padding-bottom: 33px;
+		}
+	}
 	p{
-		padding-right: 15px;
-		padding-left: 15px;
+		padding: $padSmall;
+
+		@include bp($med){
+			padding: $padMed;
+		}
 	}
 
 	div.leaseIncludes{
 		background-image: url("../img/leaseIncludes.jpg");
 		background-size: cover;
+		
+		@include bp($med){
+			width: 43%;
+			float: left;
+			vertical-align: top;
+			margin: $padMed;
+		}
+
+		@include bp($large){
+			width: 45%;
+		}
+
+		@include bp(1200px){
+			width: 46%;
+		}
+
 
 		ul{
 			margin-top: 0;
 			margin-bottom: 0;
 			padding-right: 15px;
+			@include bp($med){
+				width: 80%;
+				max-width: 230px;
+			}
+			@include bp($large){
+				max-width: 250px;
+			}
 		}
 		p{
 			margin-bottom: 0;
+
+
 		}
 	}
 	div.overImageLeft{
 		padding-top: 11px;
 		padding-bottom: 33px;
+		max-width: 600px;
 	}
 	
-	.testimonial img{
-		padding: 33px 15px 0 15px;
+	div.testimonial{
+		@include bp($med){
+			width: 43%;
+			float: right;
+			vertical-align: top;
+			margin-right: 30px;
+		}
+
+		@include bp($large){
+			width: 45%;
+		}
+
+		@include bp(1200px){
+			width: 46%;
+		}
+
+
+		p{
+			padding: 0;
+		}
 	}
+
+	.testimonial img{
+		padding: $padSmall;
+		padding-top: 33px;
+
+		@include bp($med){
+			padding: 0;
+			width: 100%;
+		}
+	}
+	
 }

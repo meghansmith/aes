@@ -1,5 +1,9 @@
 .conference{
-	padding: 0 15px;
+	padding: $padSmall;
+
+	@include bp($med){
+			padding: $padMed;
+		}
 
 	.subtitle{
 		font-family: $fontH;

@@ -195,6 +195,10 @@ body {
   line-height: 22px;
   margin: 0 auto; }
 
+div.wrapper {
+  margin: 0 auto;
+  max-width: 1200px; }
+
 h1, h2, h3, h4 {
   font-family: "Josefin Slab", serif; }
 
@@ -294,6 +298,21 @@ img {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ffffff', endColorstr='#00ffffff',GradientType=1 );
   /* IE6-9 */ }
+  @media (min-width: 600px) {
+    .overImageLeft {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.65+0,0.65+80,0+94 */
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 80%, rgba(255, 255, 255, 0) 94%, rgba(255, 255, 255, 0) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.65)), color-stop(80%, rgba(255, 255, 255, 0.65)), color-stop(94%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 80%, rgba(255, 255, 255, 0) 94%, rgba(255, 255, 255, 0) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 80%, rgba(255, 255, 255, 0) 94%, rgba(255, 255, 255, 0) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 80%, rgba(255, 255, 255, 0) 94%, rgba(255, 255, 255, 0) 100%);
+      /* IE10+ */
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 80%, rgba(255, 255, 255, 0) 94%, rgba(255, 255, 255, 0) 100%);
+      /* W3C */ } }
 
 .overImageBottom {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0.65+10,0.65+100 */
@@ -328,6 +347,23 @@ img {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ffffff', endColorstr='#00ffffff',GradientType=1 );
   /* IE6-9 */ }
+  @media (min-width: 600px) {
+    .overImageRight {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+6,0.65+20,0.65+100 */
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(6%, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.65)), color-stop(100%, rgba(255, 255, 255, 0.65)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* IE10+ */
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a6ffffff',GradientType=1 );
+      /* IE6-9 */ } }
 
 .slanted {
   font-style: italic; }
@@ -335,10 +371,13 @@ img {
 .stronger {
   font-weight: 700; }
 
-.CTA p {
-  font-family: "Josefin Slab", serif;
-  font-size: 24px;
-  line-height: 33px; }
+.CTA {
+  clear: both;
+  padding-top: 0px; }
+  .CTA p {
+    font-family: "Josefin Slab", serif;
+    font-size: 24px;
+    line-height: 33px; }
 
 /* ==========================================================================
    Helper classes
@@ -437,15 +476,24 @@ header {
     margin: 0;
     line-height: 0;
     padding-left: 10px; }
+    @media (min-width: 700px) {
+      header h1 {
+        padding-left: 25px; } }
   header div.topBar {
     background-color: rgba(255, 255, 255, 0.75);
     height: 60px; }
   header .menuButton {
     position: absolute;
     display: inline-block;
-    display: none;
     right: 10px;
     top: 12px; }
+    @media (min-width: 600px) {
+      header .menuButton {
+        display: none !important; } }
+  header .menuHide {
+    display: none; }
+  header img {
+    background-color: tan; }
   header nav a {
     text-decoration: none;
     padding: 5px 15px;
@@ -504,6 +552,9 @@ header {
     padding: 0 15px;
     margin-top: 0;
     margin-bottom: 0; }
+    @media (min-width: 700px) {
+      header p {
+        padding: 0 30px; } }
     header p a {
       color: #333; }
   header .headline {
@@ -516,53 +567,143 @@ header {
     margin-bottom: 22px; }
   header div.overImageLeft {
     position: absolute;
-    bottom: -1px; }
+    bottom: -1px;
+    max-width: 650px;
+    padding-right: 40px; }
 
 .intro {
   padding: 0 15px; }
+  @media (min-width: 700px) {
+    .intro {
+      padding: 0 30px; } }
   .intro h2 {
     font-size: 24px;
     line-height: 36px; }
+  @media (min-width: 700px) {
+    .intro img {
+      width: 60%;
+      margin-right: 44px;
+      margin-bottom: 22px;
+      float: left; } }
+  @media (min-width: 900px) {
+    .intro img {
+      margin-right: 55px;
+      margin-bottom: 44px; } }
 
 .offices {
   position: relative; }
   .offices h2 {
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px; }
+    padding: 0 15px; }
+    @media (min-width: 700px) {
+      .offices h2 {
+        padding: 0 30px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        padding-right: 100px; } }
   .offices img.officeImage {
     margin-top: -70px;
     position: relative;
     z-index: -5; }
+    @media (min-width: 600px) {
+      .offices img.officeImage {
+        margin-bottom: 44px; } }
+    @media (min-width: 700px) {
+      .offices img.officeImage {
+        margin-top: -134px; } }
+  @media (min-width: 600px) {
+    .offices p.floatUp {
+      margin-top: -197px;
+      max-width: 700px;
+      position: absolute;
+      right: 0;
+      padding-left: 150px;
+      padding-top: 11px;
+      padding-bottom: 11px; } }
+  @media (min-width: 650px) {
+    .offices p.floatUp {
+      padding-top: 22px;
+      padding-bottom: 22px; } }
+  @media (min-width: 650px) {
+    .offices p.floatUp {
+      margin-top: -219px;
+      padding-top: 33px;
+      padding-bottom: 33px; } }
   .offices p {
-    padding-right: 15px;
-    padding-left: 15px; }
+    padding: 0 15px; }
+    @media (min-width: 700px) {
+      .offices p {
+        padding: 0 30px; } }
   .offices div.leaseIncludes {
     background-image: url("../img/leaseIncludes.jpg");
     background-size: cover; }
+    @media (min-width: 700px) {
+      .offices div.leaseIncludes {
+        width: 43%;
+        float: left;
+        vertical-align: top;
+        margin: 0 30px; } }
+    @media (min-width: 900px) {
+      .offices div.leaseIncludes {
+        width: 45%; } }
+    @media (min-width: 1200px) {
+      .offices div.leaseIncludes {
+        width: 46%; } }
     .offices div.leaseIncludes ul {
       margin-top: 0;
       margin-bottom: 0;
       padding-right: 15px; }
+      @media (min-width: 700px) {
+        .offices div.leaseIncludes ul {
+          width: 80%;
+          max-width: 230px; } }
+      @media (min-width: 900px) {
+        .offices div.leaseIncludes ul {
+          max-width: 250px; } }
     .offices div.leaseIncludes p {
       margin-bottom: 0; }
   .offices div.overImageLeft {
     padding-top: 11px;
-    padding-bottom: 33px; }
+    padding-bottom: 33px;
+    max-width: 600px; }
+  @media (min-width: 700px) {
+    .offices div.testimonial {
+      width: 43%;
+      float: right;
+      vertical-align: top;
+      margin-right: 30px; } }
+  @media (min-width: 900px) {
+    .offices div.testimonial {
+      width: 45%; } }
+  @media (min-width: 1200px) {
+    .offices div.testimonial {
+      width: 46%; } }
+  .offices div.testimonial p {
+    padding: 0; }
   .offices .testimonial img {
-    padding: 33px 15px 0 15px; }
+    padding: 0 15px;
+    padding-top: 33px; }
+    @media (min-width: 700px) {
+      .offices .testimonial img {
+        padding: 0;
+        width: 100%; } }
 
 .training {
   position: relative; }
   .training h2 {
-    padding-left: 15px; }
+    padding: 0 15px; }
+    @media (min-width: 700px) {
+      .training h2 {
+        padding: 0 30px; } }
   .training img {
     margin-top: -70px;
     position: relative;
     z-index: -5; }
   .training p {
-    padding-left: 15px;
-    padding-right: 15px; }
+    padding: 0 15px; }
+    @media (min-width: 700px) {
+      .training p {
+        padding: 0 30px; } }
   .training ul {
     padding-right: 15px; }
   .training .subtitle {
@@ -572,6 +713,9 @@ header {
 
 .conference {
   padding: 0 15px; }
+  @media (min-width: 700px) {
+    .conference {
+      padding: 0 30px; } }
   .conference .subtitle {
     font-family: "Josefin Slab", serif;
     font-size: 24px;
@@ -587,22 +731,29 @@ footer {
     footer h1 a {
       height: 30px; }
   footer .location {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     padding-top: 44px; }
+    @media (min-width: 700px) {
+      footer .location {
+        padding: 0 30px;
+        padding-top: 44px; } }
     footer .location p {
       margin: 0; }
     footer .location a {
       color: #000; }
   footer div.propertyManager {
     margin-top: 66px;
-    padding-left: 15px;
-    padding-right: 15px; }
+    padding: 0 15px; }
+    @media (min-width: 700px) {
+      footer div.propertyManager {
+        padding: 0 30px; } }
     footer div.propertyManager p {
       margin-top: 11px;
       margin-bottom: 11px; }
   footer .copyright {
     font-size: 10px;
     margin-bottom: 3px;
-    padding-left: 15px;
-    padding-right: 15px; }
+    padding: 0 15px; }
+    @media (min-width: 700px) {
+      footer .copyright {
+        padding: 0 30px; } }

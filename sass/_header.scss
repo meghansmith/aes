@@ -5,6 +5,9 @@ header{
 		margin: 0;
 		line-height: 0;
 		padding-left: 10px;
+		@include bp($med){
+			padding-left: 25px;
+		}
 	}
 	div.topBar{
 		background-color: rgba(255,255,255,.75);
@@ -13,11 +16,22 @@ header{
 	.menuButton  {
 		position: absolute;
 		display: inline-block;
-		display: none;
 		right: 10px;
 		top: 12px;
-
+		@include bp($menuBreak){
+			display: none !important;
+		}
 	}
+	.menuHide{
+		display: none;
+	}
+
+	///remove this when real image is used
+	img{
+		background-color: tan;
+	}
+
+
 	nav{
 		a{
 			text-decoration: none;
@@ -90,9 +104,13 @@ header{
 		color: $red;
 	}
 	p {
-		padding: 0 15px;
+		padding: $padSmall;
 		margin-top: 0;
 		margin-bottom: 0;
+
+		@include bp($med){
+			padding: $padMed;
+		}
 
 		a{
 			color: #333;
@@ -114,6 +132,8 @@ header{
 	div.overImageLeft {
 		position: absolute;
 		bottom: -1px;
+		max-width: 650px;
+		padding-right: 40px;
 	}
 
 }
