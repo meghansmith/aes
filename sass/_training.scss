@@ -1,16 +1,32 @@
 .training {
 	position: relative;
 	h2{
+		display: inline-block;
 		padding: $padSmall;
+		padding-right: 10px;
+
+		@include bp(400px){
+			padding-right: 100px;
+		}
 
 		@include bp($med){
 			padding: $padMed;
+			padding-top: 22px;
+			padding-bottom: 22px;
+			padding-right: 100px;
+		}
+		@include bp($large){
+			padding-left: 66px;
 		}
 	}
 	img{
 		margin-top: -70px;
 		position: relative;
 		z-index: -5;
+
+		@include bp($med){
+			margin-top: -134px;
+		}
 	}
 	p{
 		padding: $padSmall;
@@ -18,6 +34,7 @@
 		@include bp($med){
 			padding: $padMed;
 		}
+
 	}
 	ul{
 		padding-right: 15px;
@@ -26,5 +43,90 @@
 		font-family: $fontH;
 		font-size: 24px;
 		line-height: 33px;
+
+		@include bp($fontBreak){
+			font-size: 36px;
+			margin-bottom: 11px;
+		}
+
+		@include bp($large){
+			padding-left: 66px;
+		}
+	}
+	div.floatUp{
+		@include bp(800px){
+			margin-top: -344px;
+			padding-top: 11px;
+		}
+
+		@include bp($large){
+			margin-top: -344px;
+		}
+
+		@include bp(1000px){
+			margin-top: -322px;
+		} 
+		@include bp(1100px){
+			margin-top: -300px;
+		} 
+	}
+	div.content{
+		@include bp(800px){
+			padding-top: 22px;
+			padding-bottom: 22px;
+			overflow: auto;
+		}
+	}
+
+
+
+	div.facilityDescription {
+		@include bp($med){
+			width: 43%;
+			float: left;
+			vertical-align: top;
+			margin: $padMed;
+		}
+
+		@include bp($large){
+			width: 42%;
+			margin-left: 66px;
+		}
+
+		p{
+			@include bp($med){
+				padding: 0;
+				margin-top: 11px;
+			}
+		}
+
+	}
+
+	div.facilityList{
+		@include bp($med){
+			width: 43%;
+			float: right;
+			vertical-align: top;
+			margin-right: 30px;
+		}
+
+		@include bp($large){
+			width: 40%;
+			margin-right: 66px;
+		}
+
+
+		ul{
+			@include bp($med){
+				padding: 0;
+				margin-left: 20px;
+			}
+		}
+		p{
+			@include bp($med){
+				padding: 0;
+				margin-top: 11px;
+			}
+		}
 	}
 }

@@ -1,20 +1,22 @@
 .offices{
 	position: relative;
-	@include bp($med){
-		//vertical-align: top;
-	}
 
 
 	h2{
 		display: inline-block;
 		padding: $padSmall;
+		padding-right: 100px;
 
 
 		@include bp($med){
 			padding: $padMed;
+			padding-right: 100px;
 			padding-top: 22px;
 			padding-bottom: 22px;
-			padding-right: 100px;
+		}
+
+		@include bp($large){
+			padding-left: 66px;
 		}
 	}
 	img.officeImage{
@@ -33,7 +35,7 @@
 	@include bp($menuBreak){
 		p.floatUp{
 			margin-top: -197px;
-			max-width: 700px;
+			max-width: 710px;
 			position: absolute;
 			right: 0;
 			padding-left: 150px;
@@ -41,15 +43,14 @@
 			padding-bottom: 11px;
 		}
 	}
-
-	@include bp(650px){  //when goes to fewer lines
+	@include bp($large){
 		p.floatUp{
-			padding-top: 22px;
-			padding-bottom: 22px;
+			padding-right: 66px;
 		}
 	}
 
-	@include bp(650px){
+
+	@include bp(650px){  //when it goes to fewer lines
 		p.floatUp{
 			margin-top: -219px;
 			padding-top: 33px;
@@ -62,6 +63,7 @@
 		@include bp($med){
 			padding: $padMed;
 		}
+
 	}
 
 	div.leaseIncludes{
@@ -73,14 +75,19 @@
 			float: left;
 			vertical-align: top;
 			margin: $padMed;
+			margin-bottom: 22px;
 		}
 
 		@include bp($large){
-			width: 45%;
+			width: 40%;
+			margin-left: 66px;
 		}
 
+		@include bp(1000px){
+			width: 41%;
+		}
 		@include bp(1200px){
-			width: 46%;
+			width: 42%;
 		}
 
 
@@ -117,16 +124,23 @@
 		}
 
 		@include bp($large){
-			width: 45%;
+			width: 40%;
+			margin-right: 66px;
 		}
 
+		@include bp(1000px){
+			width: 41%;
+		}
 		@include bp(1200px){
-			width: 46%;
+			width: 43%;
 		}
 
 
 		p{
-			padding: 0;
+			@include bp($med){
+				padding: 0;
+
+			}
 		}
 	}
 
@@ -137,6 +151,12 @@
 		@include bp($med){
 			padding: 0;
 			width: 100%;
+		}
+	}
+
+	div.CTA p{
+		@include bp($large){
+			padding: $padLarge;
 		}
 	}
 	

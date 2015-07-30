@@ -8,6 +8,11 @@ header{
 		@include bp($med){
 			padding-left: 25px;
 		}
+
+		@include bp($large){
+			padding-left: 61px;
+		}
+
 	}
 	div.topBar{
 		background-color: rgba(255,255,255,.75);
@@ -60,7 +65,7 @@ header{
 			top: 17px;
 		}
 		@include bp(800px){
-			width: 78%;
+			width: 76%;
 		}
 	}
 	li{
@@ -74,12 +79,17 @@ header{
 			float: left;
 			width: 20%;
 			margin-right: 20px;
+
 		}
 
 	} 
 	@include bp($menuBreak){
 			li:first-child{
 				width: 11%;
+
+				@include bp(800px){
+					width: 6%;
+				}
 			}	
 			li:nth-child(2){
 				width: 29%;
@@ -93,6 +103,7 @@ header{
 				@include bp(700px){
 					float: right;
 				}
+
 			}
 		}
 	@include bp(700px){
@@ -111,6 +122,9 @@ header{
 		@include bp($med){
 			padding: $padMed;
 		}
+		@include bp($large){
+			padding: $padLarge;
+		}
 
 		a{
 			color: #333;
@@ -122,9 +136,18 @@ header{
 		font-weight: 700;
 		margin-top: 22px;
 		margin-bottom: 11px;
+
+		@include bp($fontBreak){
+			font-size: 40px;
+			margin-bottom: 22px;
+		}
 	}
 	.tagline {
 		margin-bottom: 22px;
+
+		@include bp($fontBreak){
+			font-size: 18px;
+		}
 
 	}
 
@@ -132,8 +155,8 @@ header{
 	div.overImageLeft {
 		position: absolute;
 		bottom: -1px;
-		max-width: 650px;
-		padding-right: 40px;
+		max-width: 750px;
+		padding-right: 100px;
 	}
 
 }

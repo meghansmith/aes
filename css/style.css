@@ -199,6 +199,13 @@ div.wrapper {
   margin: 0 auto;
   max-width: 1200px; }
 
+@media (min-width: 700px) {
+  article {
+    margin-top: 55px; } }
+@media (min-width: 900px) {
+  article {
+    margin-top: 66px; } }
+
 h1, h2, h3, h4 {
   font-family: "Josefin Slab", serif; }
 
@@ -281,6 +288,9 @@ img {
   @media (min-width: 600px) {
     .button {
       max-width: 150px; } }
+  @media (min-width: 800px) {
+    .button {
+      font-size: 18px; } }
 
 .overImageLeft {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+51,ffffff+100&0.65+0,0.65+92,0+100 */
@@ -316,17 +326,17 @@ img {
 
 .overImageBottom {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0.65+10,0.65+100 */
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.65) 10%, rgba(255, 255, 255, 0.65) 100%);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 10%, rgba(255, 255, 255, 0.75) 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(10%, rgba(255, 255, 255, 0.65)), color-stop(100%, rgba(255, 255, 255, 0.65)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(10%, rgba(255, 255, 255, 0.75)), color-stop(100%, rgba(255, 255, 255, 0.75)));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.65) 10%, rgba(255, 255, 255, 0.65) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 10%, rgba(255, 255, 255, 0.75) 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.65) 10%, rgba(255, 255, 255, 0.65) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 10%, rgba(255, 255, 255, 0.75) 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.65) 10%, rgba(255, 255, 255, 0.65) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 10%, rgba(255, 255, 255, 0.75) 100%);
   /* IE10+ */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.65) 10%, rgba(255, 255, 255, 0.65) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 10%, rgba(255, 255, 255, 0.75) 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a6ffffff',GradientType=0 );
   /* IE6-9 */ }
@@ -378,6 +388,10 @@ img {
     font-family: "Josefin Slab", serif;
     font-size: 24px;
     line-height: 33px; }
+    @media (min-width: 800px) {
+      .CTA p {
+        font-size: 36px;
+        line-height: 44px; } }
 
 /* ==========================================================================
    Helper classes
@@ -479,6 +493,9 @@ header {
     @media (min-width: 700px) {
       header h1 {
         padding-left: 25px; } }
+    @media (min-width: 900px) {
+      header h1 {
+        padding-left: 61px; } }
   header div.topBar {
     background-color: rgba(255, 255, 255, 0.75);
     height: 60px; }
@@ -518,7 +535,7 @@ header {
         top: 17px; } }
     @media (min-width: 800px) {
       header ul {
-        width: 78%; } }
+        width: 76%; } }
   header li {
     display: block; }
     header li a {
@@ -531,7 +548,11 @@ header {
         margin-right: 20px; } }
   @media (min-width: 600px) {
     header li:first-child {
-      width: 11%; }
+      width: 11%; } }
+  @media (min-width: 600px) and (min-width: 800px) {
+    header li:first-child {
+      width: 6%; } }
+  @media (min-width: 600px) {
     header li:nth-child(2) {
       width: 29%; }
     header li:nth-child(3) {
@@ -555,6 +576,9 @@ header {
     @media (min-width: 700px) {
       header p {
         padding: 0 30px; } }
+    @media (min-width: 900px) {
+      header p {
+        padding: 0 66px; } }
     header p a {
       color: #333; }
   header .headline {
@@ -563,22 +587,36 @@ header {
     font-weight: 700;
     margin-top: 22px;
     margin-bottom: 11px; }
+    @media (min-width: 800px) {
+      header .headline {
+        font-size: 40px;
+        margin-bottom: 22px; } }
   header .tagline {
     margin-bottom: 22px; }
+    @media (min-width: 800px) {
+      header .tagline {
+        font-size: 18px; } }
   header div.overImageLeft {
     position: absolute;
     bottom: -1px;
-    max-width: 650px;
-    padding-right: 40px; }
+    max-width: 750px;
+    padding-right: 100px; }
 
 .intro {
   padding: 0 15px; }
   @media (min-width: 700px) {
     .intro {
       padding: 0 30px; } }
+  @media (min-width: 900px) {
+    .intro {
+      padding: 0 66px; } }
   .intro h2 {
     font-size: 24px;
     line-height: 36px; }
+    @media (min-width: 800px) {
+      .intro h2 {
+        font-size: 36px;
+        margin-bottom: 11px; } }
   @media (min-width: 700px) {
     .intro img {
       width: 60%;
@@ -594,13 +632,17 @@ header {
   position: relative; }
   .offices h2 {
     display: inline-block;
-    padding: 0 15px; }
+    padding: 0 15px;
+    padding-right: 100px; }
     @media (min-width: 700px) {
       .offices h2 {
         padding: 0 30px;
+        padding-right: 100px;
         padding-top: 22px;
-        padding-bottom: 22px;
-        padding-right: 100px; } }
+        padding-bottom: 22px; } }
+    @media (min-width: 900px) {
+      .offices h2 {
+        padding-left: 66px; } }
   .offices img.officeImage {
     margin-top: -70px;
     position: relative;
@@ -614,16 +656,15 @@ header {
   @media (min-width: 600px) {
     .offices p.floatUp {
       margin-top: -197px;
-      max-width: 700px;
+      max-width: 710px;
       position: absolute;
       right: 0;
       padding-left: 150px;
       padding-top: 11px;
       padding-bottom: 11px; } }
-  @media (min-width: 650px) {
+  @media (min-width: 900px) {
     .offices p.floatUp {
-      padding-top: 22px;
-      padding-bottom: 22px; } }
+      padding-right: 66px; } }
   @media (min-width: 650px) {
     .offices p.floatUp {
       margin-top: -219px;
@@ -642,13 +683,18 @@ header {
         width: 43%;
         float: left;
         vertical-align: top;
-        margin: 0 30px; } }
+        margin: 0 30px;
+        margin-bottom: 22px; } }
     @media (min-width: 900px) {
       .offices div.leaseIncludes {
-        width: 45%; } }
+        width: 40%;
+        margin-left: 66px; } }
+    @media (min-width: 1000px) {
+      .offices div.leaseIncludes {
+        width: 41%; } }
     @media (min-width: 1200px) {
       .offices div.leaseIncludes {
-        width: 46%; } }
+        width: 42%; } }
     .offices div.leaseIncludes ul {
       margin-top: 0;
       margin-bottom: 0;
@@ -674,12 +720,17 @@ header {
       margin-right: 30px; } }
   @media (min-width: 900px) {
     .offices div.testimonial {
-      width: 45%; } }
+      width: 40%;
+      margin-right: 66px; } }
+  @media (min-width: 1000px) {
+    .offices div.testimonial {
+      width: 41%; } }
   @media (min-width: 1200px) {
     .offices div.testimonial {
-      width: 46%; } }
-  .offices div.testimonial p {
-    padding: 0; }
+      width: 43%; } }
+  @media (min-width: 700px) {
+    .offices div.testimonial p {
+      padding: 0; } }
   .offices .testimonial img {
     padding: 0 15px;
     padding-top: 33px; }
@@ -687,18 +738,35 @@ header {
       .offices .testimonial img {
         padding: 0;
         width: 100%; } }
+  @media (min-width: 900px) {
+    .offices div.CTA p {
+      padding: 0 66px; } }
 
 .training {
   position: relative; }
   .training h2 {
-    padding: 0 15px; }
+    display: inline-block;
+    padding: 0 15px;
+    padding-right: 10px; }
+    @media (min-width: 400px) {
+      .training h2 {
+        padding-right: 100px; } }
     @media (min-width: 700px) {
       .training h2 {
-        padding: 0 30px; } }
+        padding: 0 30px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        padding-right: 100px; } }
+    @media (min-width: 900px) {
+      .training h2 {
+        padding-left: 66px; } }
   .training img {
     margin-top: -70px;
     position: relative;
     z-index: -5; }
+    @media (min-width: 700px) {
+      .training img {
+        margin-top: -134px; } }
   .training p {
     padding: 0 15px; }
     @media (min-width: 700px) {
@@ -710,16 +778,90 @@ header {
     font-family: "Josefin Slab", serif;
     font-size: 24px;
     line-height: 33px; }
+    @media (min-width: 800px) {
+      .training .subtitle {
+        font-size: 36px;
+        margin-bottom: 11px; } }
+    @media (min-width: 900px) {
+      .training .subtitle {
+        padding-left: 66px; } }
+  @media (min-width: 800px) {
+    .training div.floatUp {
+      margin-top: -344px;
+      padding-top: 11px; } }
+  @media (min-width: 900px) {
+    .training div.floatUp {
+      margin-top: -344px; } }
+  @media (min-width: 1000px) {
+    .training div.floatUp {
+      margin-top: -322px; } }
+  @media (min-width: 1100px) {
+    .training div.floatUp {
+      margin-top: -300px; } }
+  @media (min-width: 800px) {
+    .training div.content {
+      padding-top: 22px;
+      padding-bottom: 22px;
+      overflow: auto; } }
+  @media (min-width: 700px) {
+    .training div.facilityDescription {
+      width: 43%;
+      float: left;
+      vertical-align: top;
+      margin: 0 30px; } }
+  @media (min-width: 900px) {
+    .training div.facilityDescription {
+      width: 42%;
+      margin-left: 66px; } }
+  @media (min-width: 700px) {
+    .training div.facilityDescription p {
+      padding: 0;
+      margin-top: 11px; } }
+  @media (min-width: 700px) {
+    .training div.facilityList {
+      width: 43%;
+      float: right;
+      vertical-align: top;
+      margin-right: 30px; } }
+  @media (min-width: 900px) {
+    .training div.facilityList {
+      width: 40%;
+      margin-right: 66px; } }
+  @media (min-width: 700px) {
+    .training div.facilityList ul {
+      padding: 0;
+      margin-left: 20px; } }
+  @media (min-width: 700px) {
+    .training div.facilityList p {
+      padding: 0;
+      margin-top: 11px; } }
 
 .conference {
+  clear: both;
   padding: 0 15px; }
   @media (min-width: 700px) {
     .conference {
       padding: 0 30px; } }
+  @media (min-width: 800px) {
+    .conference {
+      margin-top: -11px; } }
+  @media (min-width: 900px) {
+    .conference {
+      padding: 0 66px; } }
   .conference .subtitle {
     font-family: "Josefin Slab", serif;
     font-size: 24px;
     line-height: 33px; }
+  @media (min-width: 700px) {
+    .conference img {
+      width: 60%;
+      margin-right: 44px;
+      margin-bottom: 22px;
+      float: left; } }
+  @media (min-width: 900px) {
+    .conference img {
+      margin-right: 55px;
+      margin-bottom: 44px; } }
 
 footer {
   background-image: url("../img/map.png");
