@@ -599,10 +599,11 @@ header {
   header div.overImageLeft {
     bottom: -1px;
     max-width: 750px;
-    padding-right: 100px; }
+    padding-right: 10px; }
     @media (min-width: 600px) {
       header div.overImageLeft {
-        position: absolute; } }
+        position: absolute;
+        padding-right: 100px; } }
 
 .intro {
   padding: 0 15px; }

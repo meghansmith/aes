@@ -156,10 +156,12 @@ header{
 	div.overImageLeft {
 		bottom: -1px;
 		max-width: 750px;
-		padding-right: 100px;
+		padding-right: 10px;
 
 		@include bp($menuBreak){
 			position: absolute;
+			padding-right: 100px;
+
 		}
 	}
 
