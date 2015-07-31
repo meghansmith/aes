@@ -260,7 +260,7 @@ sub {
 
 .logoReplace a {
   display: inline-block;
-  max-width: 150px;
+  width: 150px;
   height: 55px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -971,7 +971,7 @@ footer {
         padding-top: 80px; } }
     @media (min-width: 700px) {
       footer .location .logoReplace a {
-        max-width: 202px;
+        width: 202px;
         height: 62px; } }
   footer div.propertyManager {
     margin-top: 66px;

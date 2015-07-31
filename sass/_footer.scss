@@ -80,7 +80,7 @@ footer{
 		}
 		.logoReplace a {
 			@include bp($med){
-				max-width: 202px;
+				width: 202px;
 				height: 62px;
 			}
 		}
