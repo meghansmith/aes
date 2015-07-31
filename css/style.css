@@ -597,10 +597,12 @@ header {
       header .tagline {
         font-size: 18px; } }
   header div.overImageLeft {
-    position: absolute;
     bottom: -1px;
     max-width: 750px;
     padding-right: 100px; }
+    @media (min-width: 600px) {
+      header div.overImageLeft {
+        position: absolute; } }
 
 .intro {
   padding: 0 15px; }
@@ -863,39 +865,151 @@ header {
       margin-right: 55px;
       margin-bottom: 44px; } }
 
+.form main {
+  padding-top: 50px;
+  padding-bottom: 66px; }
+  @media (min-width: 700px) {
+    .form main {
+      padding: 0 30px;
+      padding-top: 50px;
+      padding-bottom: 66px; } }
+  @media (min-width: 900px) {
+    .form main {
+      padding: 0 66px;
+      padding-top: 50px;
+      padding-bottom: 66px; } }
+  .form main label {
+    font-family: fontB !important; }
+  .form main button {
+    padding: 5px 20px !important;
+    margin: 11px .5% 0 .5% !important;
+    display: inline-block !important;
+    width: 46% !important;
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 16px !important; }
+    @media (min-width: 600px) {
+      .form main button {
+        max-width: 150px !important; } }
+    @media (min-width: 800px) {
+      .form main button {
+        font-size: 18px !important; } }
+
 footer {
   background-image: url("../img/map.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -350px; }
+  background-position: -350px;
+  position: relative; }
+  @media (min-width: 500px) {
+    footer {
+      background-position: -290px;
+      height: 300px; } }
+  @media (min-width: 600px) {
+    footer {
+      background-position: -225px; } }
+  @media (min-width: 800px) {
+    footer {
+      background-position: -150px; } }
+  @media (min-width: 900px) {
+    footer {
+      background-position: -80px; } }
+  @media (min-width: 1000px) {
+    footer {
+      background-position: -50px; } }
+  @media (min-width: 1125px) {
+    footer {
+      background-position: 0; } }
   footer h1 {
     margin: 0; }
     footer h1 a {
       height: 30px; }
+  @media (min-width: 500px) {
+    footer .overImageRight {
+      width: 68%;
+      position: absolute;
+      left: 33%;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+6,0.65+20,0.65+100 */
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(6%, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.65)), color-stop(100%, rgba(255, 255, 255, 0.65)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* IE10+ */
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.65) 20%, rgba(255, 255, 255, 0.65) 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a6ffffff',GradientType=1 );
+      /* IE6-9 */ } }
+  @media (min-width: 600px) {
+    footer .overImageRight {
+      left: 37%; } }
+  @media (min-width: 700px) {
+    footer .overImageRight {
+      height: 270px; } }
+  @media (min-width: 800px) {
+    footer .overImageRight {
+      left: 40%; } }
+  @media (min-width: 1200px) {
+    footer .overImageRight {
+      left: 42%; } }
   footer .location {
     padding: 0 15px;
     padding-top: 44px; }
-    @media (min-width: 700px) {
-      footer .location {
-        padding: 0 30px;
-        padding-top: 44px; } }
     footer .location p {
       margin: 0; }
     footer .location a {
       color: #000; }
+    @media (min-width: 700px) {
+      footer .location {
+        width: 50%;
+        float: left;
+        padding-top: 80px; } }
+    @media (min-width: 700px) {
+      footer .location .logoReplace a {
+        max-width: 202px;
+        height: 62px; } }
   footer div.propertyManager {
     margin-top: 66px;
     padding: 0 15px; }
+    @media (min-width: 500px) {
+      footer div.propertyManager {
+        margin-top: 0; } }
     @media (min-width: 700px) {
       footer div.propertyManager {
-        padding: 0 30px; } }
+        width: 207px;
+        position: absolute;
+        right: 35px;
+        top: 80px; } }
+    @media (min-width: 900px) {
+      footer div.propertyManager {
+        right: 74px; } }
+    @media (min-width: 1200px) {
+      footer div.propertyManager {
+        right: 130px; } }
     footer div.propertyManager p {
       margin-top: 11px;
       margin-bottom: 11px; }
+      @media (min-width: 500px) {
+        footer div.propertyManager p {
+          font-size: 12px;
+          margin: 3px; } }
   footer .copyright {
     font-size: 10px;
     margin-bottom: 3px;
     padding: 0 15px; }
+    @media (min-width: 500px) {
+      footer .copyright {
+        position: absolute;
+        bottom: -2px;
+        width: 100%;
+        padding-top: 9px; } }
     @media (min-width: 700px) {
       footer .copyright {
-        padding: 0 30px; } }
+        padding-left: 30px; } }
+    @media (min-width: 900px) {
+      footer .copyright {
+        padding-left: 66px; } }

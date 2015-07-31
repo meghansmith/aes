@@ -31,9 +31,10 @@ header{
 		display: none;
 	}
 
-	///remove this when real image is used
+	
 	img{
-		background-color: tan;
+		background-color: tan; ///remove this when real image is used
+
 	}
 
 
@@ -153,10 +154,13 @@ header{
 
 
 	div.overImageLeft {
-		position: absolute;
 		bottom: -1px;
 		max-width: 750px;
 		padding-right: 100px;
+
+		@include bp($menuBreak){
+			position: absolute;
+		}
 	}
 
 }

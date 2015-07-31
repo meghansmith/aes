@@ -1,0 +1,41 @@
+.form{
+	main{
+		padding-top: 50px;
+		padding-bottom: 66px;
+		
+		@include bp($med){
+			padding: $padMed;
+			padding-top: 50px;
+			padding-bottom: 66px;
+		}
+
+		@include bp($large){
+			padding: $padLarge;
+			padding-top: 50px;
+			padding-bottom: 66px;
+		}
+		label{
+			font-family: fontB !important;
+		}
+		button{
+
+			  padding: 5px 20px !important;
+			  margin: 11px .5% 0 .5% !important;
+			  display: inline-block !important;
+			  width: 46% !important;
+			  font-family: $fontB !important;
+			  font-weight: 300 !important;
+			  font-size: 16px !important;
+			  
+			  @include bp($ctaBreak){
+			    max-width: 150px !important;
+			  }
+			  @include bp($fontBreak){
+			    font-size: 18px !important;
+
+			  }
+
+		}
+
+	}
+}

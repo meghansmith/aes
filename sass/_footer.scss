@@ -3,6 +3,29 @@ footer{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: -350px;
+	position: relative;
+
+	@include bp(500px){
+		background-position: -290px;
+		height: 300px;
+	}
+	@include bp(600px){ //becomes off center 
+		background-position: -225px;
+	}
+
+	@include bp(800px){
+			background-position: -150px;
+		}
+
+	@include bp($large){
+		background-position: -80px;
+	}
+	@include bp(1000px){
+		background-position: -50px;
+	}
+	@include bp(1125px){
+		background-position: 0;
+	}
 
 	h1{
 		margin: 0;
@@ -10,32 +33,87 @@ footer{
 			height:30px;
 		}
 	}
+	.overImageRight{
+		@include bp(500px){
+			width: 68%;
+			position: absolute;
+			left: 33%;
+			    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+6,0.65+20,0.65+100 */
+			background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 6%, rgba(255,255,255,0.65) 20%, rgba(255,255,255,0.65) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(6%,rgba(255,255,255,0)), color-stop(20%,rgba(255,255,255,0.65)), color-stop(100%,rgba(255,255,255,0.65))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 6%,rgba(255,255,255,0.65) 20%,rgba(255,255,255,0.65) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 6%,rgba(255,255,255,0.65) 20%,rgba(255,255,255,0.65) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 6%,rgba(255,255,255,0.65) 20%,rgba(255,255,255,0.65) 100%); /* IE10+ */
+			background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 6%,rgba(255,255,255,0.65) 20%,rgba(255,255,255,0.65) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a6ffffff',GradientType=1 ); /* IE6-9 */
+		}
+
+		@include bp(600px){ //becomes off center
+			left: 37%;
+		}
+		@include bp($med){
+			height: 270px;
+		}
+
+		@include bp(800px){
+			left: 40%;
+		}
+		@include bp(1200px){
+			left: 42%;
+		}
+	}
 	.location {
 		padding: $padSmall;
 		padding-top: 44px;
 
-		@include bp($med){
-			padding: $padMed;
-			padding-top: 44px;
-		}
 		p{
 			margin: 0;
 		}
 		a{
 			color: #000;
 		}
+
+		@include bp($med){
+			width: 50%;
+			float: left;
+			padding-top: 80px;
+		}
+		.logoReplace a {
+			@include bp($med){
+				max-width: 202px;
+				height: 62px;
+			}
+		}
 	}
 
 	div.propertyManager{
 		margin-top: 66px;
 		padding: $padSmall;
-
-		@include bp($med){
-			padding: $padMed;
+		
+		@include bp(500px){
+			margin-top: 0;
 		}
+		@include bp($med){
+			width: 207px;
+			position: absolute;
+			right: 35px;
+			top: 80px;
+		}
+		@include bp($large){
+			right: 74px;
+		}
+		@include bp(1200px){
+			right: 130px;
+		}
+
 		p{
 			margin-top: 11px;
 			margin-bottom: 11px;
+
+			@include bp(500px){
+				font-size: 12px;
+				margin: 3px;
+			}
 		}
 	}
 	.copyright {
@@ -43,8 +121,18 @@ footer{
 		margin-bottom: 3px;
 		padding: $padSmall;
 
+		@include bp(500px){
+			position: absolute;
+			bottom: -2px;
+			width: 100%;
+			padding-top: 9px;
+		}
+
 		@include bp($med){
-			padding: $padMed;
+			padding-left: 30px;
+		}
+		@include bp($large){
+			padding-left: 66px;
 		}
 
 	}
