@@ -32,10 +32,6 @@ header{
 	}
 
 	
-	img{
-		background-color: tan; ///remove this when real image is used
-
-	}
 
 
 	nav{
@@ -114,6 +110,8 @@ header{
 	}
 	.contactLink{
 		color: $red;
+		font-size: 18px;
+
 	}
 	p {
 		padding: $padSmall;
@@ -153,14 +151,15 @@ header{
 	}
 
 
-	div.overImageLeft {
+	div.overImageRight {
 		bottom: -1px;
 		max-width: 750px;
-		padding-right: 10px;
+		padding-left: 10px;
 
 		@include bp($menuBreak){
 			position: absolute;
-			padding-right: 100px;
+			padding-left: 100px;
+			right:0;
 
 		}
 	}

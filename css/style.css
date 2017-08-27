@@ -509,8 +509,6 @@ header {
         display: none !important; } }
   header .menuHide {
     display: none; }
-  header img {
-    background-color: tan; }
   header nav a {
     text-decoration: none;
     padding: 5px 15px;
@@ -568,7 +566,8 @@ header {
     header li {
       max-width: 130px; } }
   header .contactLink {
-    color: #cf1f26; }
+    color: #cf1f26;
+    font-size: 18px; }
   header p {
     padding: 0 15px;
     margin-top: 0;
@@ -596,14 +595,15 @@ header {
     @media (min-width: 800px) {
       header .tagline {
         font-size: 18px; } }
-  header div.overImageLeft {
+  header div.overImageRight {
     bottom: -1px;
     max-width: 750px;
-    padding-right: 10px; }
+    padding-left: 10px; }
     @media (min-width: 600px) {
-      header div.overImageLeft {
+      header div.overImageRight {
         position: absolute;
-        padding-right: 100px; } }
+        padding-left: 100px;
+        right: 0; } }
 
 .intro {
   padding: 0 15px; }
@@ -679,8 +679,9 @@ header {
       .offices p {
         padding: 0 30px; } }
   .offices div.leaseIncludes {
-    background-image: url("../img/leaseIncludes.jpg");
-    background-size: cover; }
+    background-image: url("../img/desktop.jpg");
+    background-size: cover;
+    background-position: right; }
     @media (min-width: 700px) {
       .offices div.leaseIncludes {
         width: 43%;

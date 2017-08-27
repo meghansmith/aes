@@ -67,8 +67,9 @@
 	}
 
 	div.leaseIncludes{
-		background-image: url("../img/leaseIncludes.jpg");
+		background-image: url("../img/desktop.jpg");
 		background-size: cover;
+		background-position: right;
 		
 		@include bp($med){
 			width: 43%;
