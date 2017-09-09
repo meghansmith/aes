@@ -155,13 +155,13 @@ img {
   padding: 0px 20px;
   margin: 11px .5% 0 .5%;
   display: inline-block;
-  width: 46%;
+  width: 99%;
   font-family: $fontB;
   font-weight: 300;
   font-size: 16px;
   background-color: $red;
   
-  @include bp($ctaBreak){
+  @include bp(675px){
     max-width: 150px;
   }
   @include bp($fontBreak){
